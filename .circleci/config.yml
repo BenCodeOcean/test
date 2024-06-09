@@ -18,6 +18,7 @@ commands:
           command: |
             X="test"
             [ -z "$X" ] && echo "Empty" && exit
+            echo ""
       - run:
           name: Additional step
           command: |
