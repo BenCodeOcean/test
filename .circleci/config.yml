@@ -1,0 +1,30 @@
+version: 2.1
+
+executors:
+  node-docker-container:
+    docker:
+      - image: cimg/node:18.9.1
+
+commands:
+  test-command:
+    steps:
+      - checkout
+      - run:
+          name: Test step
+          command: |
+            echo "Hello"
+
+
+jobs:
+  test-job:
+    executor: node-docker-container
+    steps:
+      - test-command
+
+
+workflows:
+  test-workflow:
+    when:
+      equal: [ test, << pipeline.parameters.workflow >> ]
+    jobs:
+      - test-job
