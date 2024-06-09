@@ -24,7 +24,5 @@ jobs:
 
 workflows:
   test-workflow:
-    when:
-      equal: [ test, << pipeline.parameters.workflow >> ]
     jobs:
       - test-job
