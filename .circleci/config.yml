@@ -13,6 +13,15 @@ commands:
           name: Test step
           command: |
             echo "Hello"
+      - run:
+          name: Variable test step
+          command: |
+            X=
+            [ -z "$X" ] && echo "Empty" && exit
+      - run:
+          name: Additional step
+          command: |
+            echo "Additional"
 
 
 jobs:
