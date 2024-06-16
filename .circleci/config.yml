@@ -24,7 +24,12 @@ commands:
           name: Additional step
           command: |
             echo "Additional"
-
+  test-command-2:
+    steps:
+      - run:
+          name: Test step
+          command: |
+            echo "Hello"
 
 jobs:
   test-job:
@@ -37,3 +42,4 @@ workflows:
   test-workflow:
     jobs:
       - test-job
+      - test-command-2
