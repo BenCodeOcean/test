@@ -13,6 +13,7 @@ commands:
           name: Test step
           command: |
             echo "Hello"
+            circleci-agent step halt
       - run:
           name: Variable test step
           command: |
