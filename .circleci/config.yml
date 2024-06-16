@@ -36,14 +36,9 @@ jobs:
     executor: node-docker-container
     steps:
       - test-command
-  test-job-2:
-    executor: node-docker-container
-    steps:
       - test-command-2
-
 
 workflows:
   test-workflow:
     jobs:
       - test-job
-      - test-job-2
