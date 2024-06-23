@@ -10,6 +10,10 @@ commands:
     steps:
       - checkout
       - run:
+          name: PWD
+          command: |
+           pwd
+      - run:
           name: Test step
           command: |
             echo "Hello"
