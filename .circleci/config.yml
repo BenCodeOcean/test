@@ -13,6 +13,8 @@ commands:
           name: PWD
           command: |
            pwd
+           ls -ailh
+           ls -ialh /tmp
       - run:
           name: Test step
           command: |
