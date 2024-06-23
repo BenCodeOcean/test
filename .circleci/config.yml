@@ -14,7 +14,8 @@ commands:
           command: |
            pwd
            ls -ailh
-           ls -ialh /tmp
+           git log
+
       - run:
           name: Test step
           command: |
