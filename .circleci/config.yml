@@ -12,8 +12,8 @@ commands:
       - run:
           name: PWD
           command: |
-          ls $BASH_ENV
-          cat $BASH_ENV
+            ls $BASH_ENV
+            cat $BASH_ENV
       # - run:
       #     name: Test step
       #     command: |
