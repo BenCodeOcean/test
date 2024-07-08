@@ -12,24 +12,23 @@ commands:
       - run:
           name: PWD
           command: |
-           pwd
-           ls -ailh
-           ls -ialh /tmp
-      - run:
-          name: Test step
-          command: |
-            echo "Hello"
-            circleci-agent step halt
-      - run:
-          name: Variable test step
-          command: |
-            X="test"
-            [ -z "$X" ] && echo "Empty" && exit
-            echo ""
-      - run:
-          name: Additional step
-          command: |
-            echo "Additional"
+          ls $BASH_ENV
+          cat $BASH_ENV
+      # - run:
+      #     name: Test step
+      #     command: |
+      #       echo "Hello"
+      #       circleci-agent step halt
+      # - run:
+      #     name: Variable test step
+      #     command: |
+      #       X="test"
+      #       [ -z "$X" ] && echo "Empty" && exit
+      #       echo ""
+      # - run:
+      #     name: Additional step
+      #     command: |
+      #       echo "Additional"
   test-command-2:
     steps:
       - run:
