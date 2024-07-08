@@ -12,6 +12,7 @@ commands:
       - run:
           name: PWD
           command: |
+            echo "TEST=test" >> $BASH_ENV
             ls $BASH_ENV
             cat $BASH_ENV
       # - run:
