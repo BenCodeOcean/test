@@ -36,6 +36,9 @@ commands:
           name: Test step
           command: |
             echo "Hello"
+            echo "TEST=test" >> $BASH_ENV
+            ls $BASH_ENV
+            cat $BASH_ENV
 
 jobs:
   test-job:
