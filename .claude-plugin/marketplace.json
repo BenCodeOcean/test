@@ -1,6 +1,6 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
-  "name": "your-skills-marketplace",
+  "name": "codeocean-marketplace",
   "description": "Private collection of Claude Code skills",
   "owner": {
     "name": "BenCodeOcean",
