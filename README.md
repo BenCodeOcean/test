@@ -9,21 +9,34 @@ Skills for deployment, infrastructure, and operations automation.
 
 - **codeocean-deployment**: Deploy and manage Code Ocean environments in AWS accounts
 
+### Examples (`examples/`)
+Simple example skills for learning and testing.
+
+- **hello-world**: Print a colorful hello world message
+
 ## Installation
 
 **Install all skills:**
 ```bash
-claude skill install git@github.com:your-org/your-skills.git
+claude skill install https://github.com/BenCodeOcean/test.git
 ```
 
-**Install DevOps category:**
+**Install by category:**
 ```bash
-claude skill install git@github.com:your-org/your-skills.git/devops
+# DevOps skills
+claude skill install https://github.com/BenCodeOcean/test.git/devops
+
+# Example skills
+claude skill install https://github.com/BenCodeOcean/test.git/examples
 ```
 
 **Install specific skill:**
 ```bash
-claude skill install git@github.com:your-org/your-skills.git/devops/codeocean-deployment
+# CodeOcean deployment
+claude skill install https://github.com/BenCodeOcean/test.git/devops/codeocean-deployment
+
+# Hello World
+claude skill install https://github.com/BenCodeOcean/test.git/examples/hello-world
 ```
 
 ## Adding New Skills

@@ -17,6 +17,17 @@
       },
       "source": "./devops/codeocean-deployment",
       "category": "devops"
+    },
+    {
+      "name": "hello-world",
+      "description": "Print a colorful hello world message using ANSI color codes",
+      "version": "1.0.0",
+      "author": {
+        "name": "BenCodeOcean",
+        "email": "ben@codeocean.com"
+      },
+      "source": "./examples/hello-world",
+      "category": "examples"
     }
   ]
 }
