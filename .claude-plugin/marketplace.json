@@ -1,8 +1,12 @@
 {
-  "name": "Your Skills Marketplace",
+  "name": "your-skills-marketplace",
   "description": "Private collection of Claude Code skills",
   "version": "1.0.0",
-  "skills": [
+  "owner": {
+    "name": "BenCodeOcean",
+    "url": "https://github.com/BenCodeOcean"
+  },
+  "plugins": [
     {
       "name": "codeocean-deployment",
       "path": "devops/codeocean-deployment",
