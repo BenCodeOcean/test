@@ -1,15 +1,46 @@
-# Changeset
+# Claude Skills Collection
 
-## infra-private-cloud
-*https://github.com/OceanCodes/infra-private-cloud/compare/v2.4.0...release/2.5.0*
-|commit|owner|date|message|checked|
-|-|-|-|-|-|
-|[ab7c6e8](https://github.com/OceanCodes/infra-private-cloud/commit/ab7c6e8)|BenCodeOcean|2022-08-03T14:02:13Z|Update AMIs|:heavy_check_mark:|
-|[c2b78d3](https://github.com/OceanCodes/infra-private-cloud/commit/c2b78d3)|Or Tarab|2022-08-02T09:40:29Z|Update AMIs||
-|[9a46a50](https://github.com/OceanCodes/infra-private-cloud/commit/9a46a50)|circleci|2022-08-02T02:58:18Z|Update AMIs|:heavy_check_mark:|
+Private collection of Claude Code skills organized by category.
 
-...
+## Categories
 
-..
+### DevOps (`devops/`)
+Skills for deployment, infrastructure, and operations automation.
 
-.
+- **codeocean-deployment**: Deploy and manage Code Ocean environments in AWS accounts
+
+## Installation
+
+**Install all skills:**
+```bash
+claude skill install git@github.com:your-org/your-skills.git
+```
+
+**Install DevOps category:**
+```bash
+claude skill install git@github.com:your-org/your-skills.git/devops
+```
+
+**Install specific skill:**
+```bash
+claude skill install git@github.com:your-org/your-skills.git/devops/codeocean-deployment
+```
+
+## Adding New Skills
+
+To add a new skill:
+
+1. Choose the appropriate category folder (or create a new one)
+2. Create a new folder with your skill name
+3. Add a `SKILL.md` file with the skill definition
+4. Update this README and the category README
+
+## Skill Structure
+
+Each skill should have:
+- `SKILL.md` - Required: skill definition with frontmatter and instructions
+- `README.md` - Optional: additional documentation
+
+## Private Repository
+
+This is a private repository. Users need appropriate git access (SSH keys or PAT) to install these skills.
