@@ -1,25 +1,22 @@
 {
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "your-skills-marketplace",
   "description": "Private collection of Claude Code skills",
-  "version": "1.0.0",
   "owner": {
     "name": "BenCodeOcean",
-    "url": "https://github.com/BenCodeOcean"
+    "email": "ben@codeocean.com"
   },
   "plugins": [
     {
       "name": "codeocean-deployment",
-      "source": "https://github.com/BenCodeOcean/test",
-      "description": "Deploy, update, delete, and manage Code Ocean environments in AWS accounts using the covpc CLI tool. Use when user mentions deploying, creating, updating, or managing Code Ocean environments, deployments, or stacks. Also use this skill when working on new features that need testing in a Code Ocean environment.",
-      "category": "devops",
-      "version": "1.0.0"
-    }
-  ],
-  "categories": [
-    {
-      "id": "devops",
-      "name": "DevOps",
-      "description": "Skills for deployment, infrastructure, and operations automation"
+      "description": "Deploy, update, delete, and manage Code Ocean environments in AWS accounts using the covpc CLI tool",
+      "version": "1.0.0",
+      "author": {
+        "name": "BenCodeOcean",
+        "email": "ben@codeocean.com"
+      },
+      "source": "./devops/codeocean-deployment",
+      "category": "devops"
     }
   ]
 }
