@@ -9,7 +9,7 @@
   "plugins": [
     {
       "name": "codeocean-deployment",
-      "source": "devops/codeocean-deployment",
+      "source": "https://github.com/BenCodeOcean/test.git/devops/codeocean-deployment",
       "description": "Deploy, update, delete, and manage Code Ocean environments in AWS accounts using the covpc CLI tool. Use when user mentions deploying, creating, updating, or managing Code Ocean environments, deployments, or stacks. Also use this skill when working on new features that need testing in a Code Ocean environment.",
       "category": "devops",
       "version": "1.0.0"
